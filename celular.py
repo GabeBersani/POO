@@ -21,12 +21,12 @@ class Eletronico:
         else:
             print(f'Não é um eletronico de entreterimento')
 
-
     def verificar_estudo(self):
         if self.eletronico_estudo:
             print(f'É um eletronico de estudo')
         else:
             print(f'Não é um eletronico de estudo')
+
 
     def estudar(self, status):
         if self.eletronico_estudo and status:
@@ -40,8 +40,6 @@ class Eletronico:
         else:
             self.eletronico_estudo = status
             self.eletronico_estudo()
-
-
 
     def entreter(self, status):
         if self.eletronico_entreterimento and status:
@@ -103,9 +101,6 @@ class Celular(Eletronico):
         else:
             self.bateria = status
             self.bateria()
-
-
-
 
 
     def armazenamento(self, status):
